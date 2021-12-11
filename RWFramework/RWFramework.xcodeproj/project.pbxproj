@@ -27,7 +27,6 @@
 		75A7D2DD1A745B7400E662A8 /* RWFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A7D2D11A745B7400E662A8 /* RWFramework.framework */; };
 		75A7D2E41A745B7400E662A8 /* RWFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A7D2E31A745B7400E662A8 /* RWFrameworkTests.swift */; };
 		75A7D3161A75922600E662A8 /* RWFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A7D3151A75922600E662A8 /* RWFramework.swift */; };
-		75CDBD3A1AA780A300A14C3C /* RWFrameworkMediaUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CDBD391AA780A300A14C3C /* RWFrameworkMediaUploader.swift */; };
 		75E08D921AE181BE005AD74D /* RWFrameworkAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E08D901AE181BE005AD74D /* RWFrameworkAudioRecorder.m */; };
 		75E7DE9D1A7FE0F300B092AF /* RWFrameworkURLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E7DE9C1A7FE0F300B092AF /* RWFrameworkURLFactory.swift */; };
 		75E7DE9F1A7FEDE600B092AF /* RWFrameworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E7DE9E1A7FEDE600B092AF /* RWFrameworkConfig.swift */; };
@@ -68,7 +67,6 @@
 		75A7D2E21A745B7400E662A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75A7D2E31A745B7400E662A8 /* RWFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWFrameworkTests.swift; sourceTree = "<group>"; };
 		75A7D3151A75922600E662A8 /* RWFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFramework.swift; sourceTree = "<group>"; };
-		75CDBD391AA780A300A14C3C /* RWFrameworkMediaUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFrameworkMediaUploader.swift; sourceTree = "<group>"; };
 		75E08D901AE181BE005AD74D /* RWFrameworkAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWFrameworkAudioRecorder.m; sourceTree = "<group>"; };
 		75E08D911AE181BE005AD74D /* RWFrameworkAudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWFrameworkAudioRecorder.h; sourceTree = "<group>"; };
 		75E7DE9C1A7FE0F300B092AF /* RWFrameworkURLFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFrameworkURLFactory.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 		7519C3D11A8555C1006A5D1E /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				75CDBD391AA780A300A14C3C /* RWFrameworkMediaUploader.swift */,
 				7519C3CF1A85511A006A5D1E /* RWFrameworkMedia.swift */,
 				7519C3D21A8555DB006A5D1E /* RWFrameworkText.swift */,
 				7519C3D41A856518006A5D1E /* RWFrameworkCamera.swift */,
@@ -154,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				2C59A4CE20FEB2610035599D /* Playlist */,
-				2C59A4A820FAAC900035599D /* StreamingKit */,
 				75A2CDBF1A8172980052F987 /* README.md */,
 				75A7D2D61A745B7400E662A8 /* RWFramework.h */,
 				75A7D3151A75922600E662A8 /* RWFramework.swift */,
@@ -269,6 +265,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 75A7D2C71A745B7400E662A8;
@@ -320,7 +317,6 @@
 				75A2E8981A93CA7F0008AAF1 /* RWFrameworkTimers.swift in Sources */,
 				75A2E8601A8CFCF90008AAF1 /* RWFrameworkTags.swift in Sources */,
 				75E08D921AE181BE005AD74D /* RWFrameworkAudioRecorder.m in Sources */,
-				75CDBD3A1AA780A300A14C3C /* RWFrameworkMediaUploader.swift in Sources */,
 				2C2D9D1E2102C70800940A25 /* Asset.swift in Sources */,
 				75FA3DF11A8503FB001D52CC /* RWFrameworkHTTP.swift in Sources */,
 				75743B831A7831130058CCA4 /* RWFrameworkProtocol.swift in Sources */,
