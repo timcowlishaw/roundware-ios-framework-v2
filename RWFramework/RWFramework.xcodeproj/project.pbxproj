@@ -12,6 +12,7 @@
 		2C59A4BB20FAAC900035599D /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C59A4A720FAAC900035599D /* Playlist.swift */; };
 		2C59A4D020FEB2810035599D /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C59A4CF20FEB2810035599D /* AudioTrack.swift */; };
 		2CFB4265211155EE00965CF5 /* AssetFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFB4264211155EE00965CF5 /* AssetFilter.swift */; };
+		44D498570BE2854A18821311 /* libPods-RWFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E147CBEA93031D9EE3E106F9 /* libPods-RWFramework.a */; };
 		7519C3D01A85511A006A5D1E /* RWFrameworkMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7519C3CF1A85511A006A5D1E /* RWFrameworkMedia.swift */; };
 		7519C3D31A8555DB006A5D1E /* RWFrameworkText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7519C3D21A8555DB006A5D1E /* RWFrameworkText.swift */; };
 		7519C3D51A856518006A5D1E /* RWFrameworkCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7519C3D41A856518006A5D1E /* RWFrameworkCamera.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AB916A89F284ECBB4595602 /* Pods-RWFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWFramework.debug.xcconfig"; path = "Target Support Files/Pods-RWFramework/Pods-RWFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		2C2D9D1B2102C6EC00940A25 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
 		2C2D9D1D2102C70800940A25 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		2C59A4A720FAAC900035599D /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
@@ -72,6 +74,8 @@
 		75E7DE9C1A7FE0F300B092AF /* RWFrameworkURLFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFrameworkURLFactory.swift; sourceTree = "<group>"; };
 		75E7DE9E1A7FEDE600B092AF /* RWFrameworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFrameworkConfig.swift; sourceTree = "<group>"; };
 		75FA3DF01A8503FB001D52CC /* RWFrameworkHTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RWFrameworkHTTP.swift; sourceTree = "<group>"; };
+		9179ECAE9855C0B02AE34DBF /* Pods-RWFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWFramework.release.xcconfig"; path = "Target Support Files/Pods-RWFramework/Pods-RWFramework.release.xcconfig"; sourceTree = "<group>"; };
+		E147CBEA93031D9EE3E106F9 /* libPods-RWFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D498570BE2854A18821311 /* libPods-RWFramework.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +140,8 @@
 				75A7D2D31A745B7400E662A8 /* RWFramework */,
 				75A7D2E01A745B7400E662A8 /* RWFrameworkTests */,
 				75A7D2D21A745B7400E662A8 /* Products */,
+				C0C5D406468EF75FFFD1DE23 /* Pods */,
+				D026723D015C8A87F6B93FAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +198,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C0C5D406468EF75FFFD1DE23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AB916A89F284ECBB4595602 /* Pods-RWFramework.debug.xcconfig */,
+				9179ECAE9855C0B02AE34DBF /* Pods-RWFramework.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		D026723D015C8A87F6B93FAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E147CBEA93031D9EE3E106F9 /* libPods-RWFramework.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -210,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75A7D2E71A745B7400E662A8 /* Build configuration list for PBXNativeTarget "RWFramework" */;
 			buildPhases = (
+				066066E9430E682B63096C36 /* [CP] Check Pods Manifest.lock */,
 				75A7D2CC1A745B7400E662A8 /* Sources */,
 				75A7D2CD1A745B7400E662A8 /* Frameworks */,
 				75A7D2CE1A745B7400E662A8 /* Headers */,
@@ -295,6 +321,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		066066E9430E682B63096C36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RWFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		75A7D2CC1A745B7400E662A8 /* Sources */ = {
@@ -452,6 +503,7 @@
 		};
 		75A7D2E81A745B7400E662A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB916A89F284ECBB4595602 /* Pods-RWFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -476,6 +528,7 @@
 		};
 		75A7D2E91A745B7400E662A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9179ECAE9855C0B02AE34DBF /* Pods-RWFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

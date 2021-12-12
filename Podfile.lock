@@ -1,0 +1,41 @@
+PODS:
+  - geos (4.0.2)
+  - GEOSwift (5.0.0):
+    - geos (= 4.0.2)
+  - GEOSwiftMapKit (1.0.0):
+    - GEOSwift (= 5.0.0)
+  - PromisesObjC (2.0.0)
+  - PromisesSwift (2.0.0):
+    - PromisesObjC (= 2.0.0)
+  - ReachabilitySwift (5.0.0)
+  - Repeat (0.5.8)
+
+DEPENDENCIES:
+  - GEOSwift (~> 5.0.0)
+  - GEOSwiftMapKit (~> 1.0.0)
+  - PromisesSwift (~> 2.0.0)
+  - ReachabilitySwift (~> 5.0.0)
+  - Repeat (~> 0.5.6)
+
+SPEC REPOS:
+  trunk:
+    - geos
+    - GEOSwift
+    - GEOSwiftMapKit
+    - PromisesObjC
+    - PromisesSwift
+    - ReachabilitySwift
+    - Repeat
+
+SPEC CHECKSUMS:
+  geos: ee2ae833c7b3c881a33de35a3cea18bf3e0cf7bc
+  GEOSwift: 36a5ee6814414a7962c558a352705ef34f27e303
+  GEOSwiftMapKit: 7079f598ca49c92bcc1deb3414aa0d38a2a9b074
+  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  PromisesSwift: e0b2a6433469efb0b83a2b84c62a2abab8e5e5d4
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Repeat: 8e65710d09da68f06ed79e865b091ffdcc8d0279
+
+PODFILE CHECKSUM: cf1763934581883b9dad7d46853859b5cb8738ff
+
+COCOAPODS: 1.11.2

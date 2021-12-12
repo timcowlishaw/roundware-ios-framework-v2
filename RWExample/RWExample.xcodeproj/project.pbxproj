@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AEE1C978F9BDDFB08DB4AFF /* libPods-RWExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0C038F197EA33FBE8BEA86 /* libPods-RWExample.a */; };
 		7514200E1F5DAEAB00BF7864 /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7514200D1F5DAEAB00BF7864 /* ListenViewController.swift */; };
 		751420111F5DB59300BF7864 /* SpeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751420101F5DB59300BF7864 /* SpeakViewController.swift */; };
 		75179DF01F76B6B9004A2591 /* ListenTagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75179DEF1F76B6B9004A2591 /* ListenTagsViewController.swift */; };
@@ -79,6 +80,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		188ECD956A6A93D4EE0363CD /* Pods-RWExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWExample.release.xcconfig"; path = "Target Support Files/Pods-RWExample/Pods-RWExample.release.xcconfig"; sourceTree = "<group>"; };
+		1FB834F2BA495ABB0168CB12 /* Pods-RWExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RWExample.debug.xcconfig"; path = "Target Support Files/Pods-RWExample/Pods-RWExample.debug.xcconfig"; sourceTree = "<group>"; };
 		7514200D1F5DAEAB00BF7864 /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
 		751420101F5DB59300BF7864 /* SpeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakViewController.swift; sourceTree = "<group>"; };
 		75179DEF1F76B6B9004A2591 /* ListenTagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenTagsViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 		75D532021A813EF900DFB873 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		75FE0D561FC5DF8D00BAF45B /* SpeakTagsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakTagsViewController.swift; sourceTree = "<group>"; };
 		75FE0D5A1FCB039700BAF45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EE0C038F197EA33FBE8BEA86 /* libPods-RWExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RWExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 			files = (
 				75D532031A813EF900DFB873 /* MapKit.framework in Frameworks */,
 				75DFFFE01A7AECC300660B96 /* RWFramework.framework in Frameworks */,
+				0AEE1C978F9BDDFB08DB4AFF /* libPods-RWExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +134,8 @@
 				75A7D2BA1A745B5300E662A8 /* RWExampleTests */,
 				75A7D2A31A745B5300E662A8 /* Products */,
 				75A7D3191A76774B00E662A8 /* RWFramework.xcodeproj */,
+				B3671660D78246D4487B7674 /* Pods */,
+				B0845756DD6B840750D0CADD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +219,24 @@
 			name = Speak;
 			sourceTree = "<group>";
 		};
+		B0845756DD6B840750D0CADD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE0C038F197EA33FBE8BEA86 /* libPods-RWExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3671660D78246D4487B7674 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FB834F2BA495ABB0168CB12 /* Pods-RWExample.debug.xcconfig */,
+				188ECD956A6A93D4EE0363CD /* Pods-RWExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75A7D2C11A745B5300E662A8 /* Build configuration list for PBXNativeTarget "RWExample" */;
 			buildPhases = (
+				8F01574F88248A284F07F6D1 /* [CP] Check Pods Manifest.lock */,
 				75A7D29E1A745B5300E662A8 /* Sources */,
 				75A7D29F1A745B5300E662A8 /* Frameworks */,
 				75A7D2A01A745B5300E662A8 /* Resources */,
@@ -344,6 +370,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F01574F88248A284F07F6D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RWExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		75A7D29E1A745B5300E662A8 /* Sources */ = {
@@ -518,6 +569,7 @@
 		};
 		75A7D2C21A745B5300E662A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB834F2BA495ABB0168CB12 /* Pods-RWExample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -537,6 +589,7 @@
 		};
 		75A7D2C31A745B5300E662A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 188ECD956A6A93D4EE0363CD /* Pods-RWExample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
